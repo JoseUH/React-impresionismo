@@ -1,0 +1,104 @@
+
+    .madrid {
+        @media (max-width: 600px) {
+          display: none;
+        }
+      
+        width: 100%;
+        height: 40vh;
+        
+      }
+      
+      footer {
+        @media (max-width: 600px) {
+          display: none;
+        }
+       
+        width: 100%;
+        height: 60vh;
+      
+        background-color: #710c0c;
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        .redes {
+          width: 20vw;
+          ul {
+            margin-top: 90px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            li{
+              
+              a {
+                .icono {
+                  padding-left: 60px;
+                  width: 30%;
+                  height: 30%;
+                }
+                .invert{
+                  -webkit-filter: invert(100%);
+                filter: invert(100%);
+                width: 30%;
+                  height: 30%;
+                  padding-left: 60px;
+
+                }
+              }
+
+            }
+            
+              
+            
+            
+          }
+        }
+        .horario{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-size: 0.75rem;
+        }
+      
+        .gobierno {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 20vw;
+          height: 100%;
+          a {
+            
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .exposiciones{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+           ul{
+            padding-top: 20px;
+            width: 30vw;
+             
+             li{
+              
+               display: flex;
+               align-items: center;
+               padding: 10px;
+               img{
+                 width: 10%;
+                 height: 10%;
+               }
+               h3{
+                 padding: 10px;
+               }
+             }
+           }
+        }
+      }
+      

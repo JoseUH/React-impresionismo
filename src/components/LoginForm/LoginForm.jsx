@@ -1,8 +1,10 @@
 import React, { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import { JwtContext } from "../context/jwtContext";
-import { API } from "../services/api";
+import { JwtContext } from "../../context/jwtContext";
+import { API } from "../../services/api";
+import "./LoginForm.scss"
+
 const LoginForm = () => {
   const { setJwt } = useContext(JwtContext);
   const { register, handleSubmit } = useForm();
@@ -11,19 +13,21 @@ const LoginForm = () => {
 
   const onSubmit = (formData) => {
     API.post("users/login", formData).then((res) => {
-      localStorage.setItem("token", res.data.data.token);
-      localStorage.setItem("user", res.data.data.user.emoji);
+      
+      localStorage.setItem("token", res.data.token);
+      localStorage.setItem("user", res.data.user.emoji);
       setJwt(localStorage.getItem("token"));
       navigate("/");
+      console.log(res.data)
     });
   };
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <label htmlFor="email">Email:</label>
+      <label htmlFor="username">Username:</label>
       <input
-        type="email"
-        id="email"
-        {...register("email", { required: true })}
+        type="text"
+        id="username"
+        {...register("username", { required: true })}
       />
       <label htmlFor="password">Password:</label>
       <input

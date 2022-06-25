@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 import ButtonLogout from "../ButtonLogout"
 import { JwtContext } from "../../context/jwtContext";
 const Navigator = () => {
-  //Recuperamos la variable de estado a través del contexto
+
   const { jwt } = useContext(JwtContext);
 
-  const userEmoji = localStorage.getItem("user");
+  // const userEmoji = localStorage.getItem("user");
 
   return (
-    <nav>
+    <nav >
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -21,6 +21,7 @@ const Navigator = () => {
         <li>
           <Link to="/cuadros">Cuadros</Link>
         </li>
+        
         {jwt && (
           <>
            <li> 
@@ -39,7 +40,7 @@ const Navigator = () => {
            
           </>
         )}
-        {userEmoji != undefined && (<li>Bienvenido {userEmoji}</li>)}
+        {/* {userEmoji != undefined && alert ("Bienvenido")} */}
       </ul>
     </nav>
   );

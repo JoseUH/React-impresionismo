@@ -18,11 +18,11 @@ const RegisterForm = () => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-      <label htmlFor="email">Email:</label>
+      <label htmlFor="username">Username:</label>
       <input
-        type="email"
-        id="email"
-        {...register("email", { required: true })}
+        type="text"
+        id="username"
+        {...register("username", { required: true })}
       />
       <label htmlFor="password">Password:</label>
       <input
