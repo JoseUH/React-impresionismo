@@ -1,0 +1,19 @@
+nav {
+    ul {
+      height: 10vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  
+      a {
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+  
+        &:hover {
+          color: orange;
+        }
+      }
+    }
+  }
+  
