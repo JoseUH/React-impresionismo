@@ -11,6 +11,10 @@
   
 
   .carta {
+    @media (max-width: 400px) {
+      width: 60vw;
+      
+      }
     &:hover {
       -webkit-box-shadow: 3px 5px 39px 14px rgba(113, 12, 12, 1);
       -moz-box-shadow: 3px 5px 39px 14px rgba(113, 12, 12, 1);

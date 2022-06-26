@@ -2,6 +2,9 @@ nav {
     background-color: #710c0c ;
     height: 10vh;
     ul {
+      @media (max-width: 400px) {
+        padding-left: 10px;
+        }
       height: 10vh;
       display: flex;
       justify-content: space-evenly;

@@ -25,8 +25,11 @@ const Navigator = () => {
         {jwt && (
           <>
            <li> 
-              <Link to="/register">Register</Link>
+              <Link to="/register">Registro</Link>
             </li>
+            <li>
+          <Link to="/add">Add</Link>
+        </li>
             <li>
               <ButtonLogout />
             </li>

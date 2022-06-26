@@ -14,11 +14,11 @@ const CuadrosDetail = () => {
           );
           
           setCuadro(res.data.Cuadro);
-          console.log(res.data.Cuadro)
+          // console.log(res.data.Cuadro)
         };
     
         getCuadroByName();
-      });
+      }, []);
 
 
   return (

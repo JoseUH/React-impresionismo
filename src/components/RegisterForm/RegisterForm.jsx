@@ -1,8 +1,8 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
-import { API } from "../services/api";
-
+import { API } from "../../services/api";
+import "./RegisterForm.scss"
 const RegisterForm = () => {
  
   const { register, handleSubmit } = useForm();
@@ -17,6 +17,9 @@ const RegisterForm = () => {
   };
 
   return (
+    <div className="registro">
+    <h2>Registro de nuevos usuarios</h2>
+    <p>Rellene el formulario para crear un nuevo usuario y darle acceso a crear nuevas colecciones</p>
     <form onSubmit={handleSubmit(onSubmit)}>
       <label htmlFor="username">Username:</label>
       <input
@@ -41,8 +44,9 @@ const RegisterForm = () => {
         <option value="🐖">🐖</option>
         <option value="🥜">🥜</option>
       </select>
-      <button type="submit">Register</button>
+      <button type="submit">Registrar</button>
     </form>
+    </div>
   );
 };
 

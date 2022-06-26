@@ -1,0 +1,66 @@
+.pintores {
+  @media (max-width: 400px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap:0px;
+    
+    }
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    padding-top: 20px;
+    gap: 20px;
+    
+  
+    .carta {
+      @media (max-width: 400px) {
+        width: 40vw;
+        
+        }
+      
+      &:hover {
+        -webkit-box-shadow: 3px 5px 39px 14px rgba(113, 12, 12, 1);
+        -moz-box-shadow: 3px 5px 39px 14px rgba(113, 12, 12, 1);
+        box-shadow: 3px 5px 39px 14px rgba(113, 12, 12, 1);
+        .hover {
+          width: 100%;
+          text-align: center;
+          transition: 0.5s;
+          display: inline;
+          color: #a5a2a2;
+        }
+      }
+      
+      margin: 0 auto;
+      width: 20vw;
+      height: 20rem;
+      text-align: center;
+      color: whitesmoke;
+      border: double 1px whitesmoke;
+      padding: 20px;
+      border-radius: 10px;
+      .hover {
+        width: 100%;
+        text-align: center;
+        display: none;
+      }
+  
+      h2 {
+        font-size: 1rem;
+      }
+  
+      img {
+        padding-top: 20px;
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+      }
+    }
+  }
