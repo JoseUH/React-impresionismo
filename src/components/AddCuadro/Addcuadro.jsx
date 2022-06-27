@@ -13,7 +13,7 @@ const AddCuadro = () => {
     API.post("cuadros/", formData).then((res) => {
       console.log(res);
     });
-    navigate("/login");
+    navigate("/cuadros");
   };
 
   return (

@@ -10,8 +10,16 @@ const Navigator = () => {
   // const userEmoji = localStorage.getItem("user");
 
   return (
-    <nav >
-      <ul>
+    
+    <nav className="top-nav">
+     <h2 className="logo">
+      Museo del impresionismo
+    </h2>
+    <input id="menu-toggle" type="checkbox" />
+    <label className='menu-button-container' for="menu-toggle">
+    <div className='menu-button'></div>
+  </label>
+      <ul className="menu">
         <li>
           <Link to="/">Home</Link>
         </li>

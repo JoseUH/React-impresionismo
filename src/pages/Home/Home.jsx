@@ -4,7 +4,7 @@ import Footer from '../../components/Footer/Footer'
 const Home = () => {
   return (
     <div>
-        <img src="https://api-www.louvre.fr/sites/default/files/2021-03/petite-galerie-5-figure-d-artiste-2.jpg" alt="museum"/>
+        <img src="https://wallpaperaccess.com/full/86535.gif" alt="museum"/>
         <Footer/>
     </div>
   )
