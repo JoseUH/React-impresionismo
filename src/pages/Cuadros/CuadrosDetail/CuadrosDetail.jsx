@@ -10,7 +10,7 @@ const CuadrosDetail = () => {
     useEffect(() => {
         const getCuadroByName = async () => {
           const res = await axios.get(
-            `http://localhost:8001/cuadros/${id}`
+            `https://node-backimpresionismo.vercel.app/cuadros/${id}`
           );
           
           setCuadro(res.data.Cuadro);
