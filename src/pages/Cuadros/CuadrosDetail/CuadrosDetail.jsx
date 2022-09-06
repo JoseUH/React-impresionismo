@@ -18,7 +18,7 @@ const CuadrosDetail = () => {
         };
     
         getCuadroByName();
-      }, []);
+      },[]);
 
 
   return (
