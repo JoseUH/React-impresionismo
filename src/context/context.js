@@ -2,7 +2,7 @@ import React,{ useState, useEffect, createContext} from "react";
 
 export const SWContext = createContext();
 
-const BASEURL = "http://localhost:8001";
+const BASEURL = "https://node-backimpresionismo.vercel.app";
 
 export const SWContextProvider =({ children }) => {
 
@@ -16,7 +16,7 @@ export const SWContextProvider =({ children }) => {
         const cuadrosAPI = await fetch(`${BASEURL}/cuadros`);
         const cuadrosJSON = await cuadrosAPI.json();
         setCuadros(cuadrosJSON.cuadros);
-        console.log(cuadrosJSON.cuadros)
+        // console.log(cuadrosJSON.cuadros)
         
         
         
@@ -30,7 +30,7 @@ export const SWContextProvider =({ children }) => {
         const pintoresAPI = await fetch(`${BASEURL}/pintores`);
         const pintoresJSON = await pintoresAPI.json();
         setPintores(pintoresJSON.pintores);
-        console.log(pintoresJSON.pintores)
+        // console.log(pintoresJSON.pintores)
         
         
         

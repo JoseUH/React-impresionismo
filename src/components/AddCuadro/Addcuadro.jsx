@@ -10,6 +10,7 @@ const AddCuadro = () => {
   const navigate = useNavigate();
 
   const onSubmit = (formData) => {
+    
     API.post("cuadros/", formData).then((res) => {
       console.log(res);
     });

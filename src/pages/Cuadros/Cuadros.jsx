@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const Cuadros = () => {
     const { cuadros } = useContext(SWContext);
   const [H2, setH2] = useState();
+ 
 
   return (
     <div className='cuadros'>
@@ -21,6 +22,7 @@ const Cuadros = () => {
           class='carta'>
           <h2 className='hover'>{H2}</h2>
           <img src={cuadro.imagen} alt={cuadro.titulo}></img>
+          
           
         </div>
         </Link>

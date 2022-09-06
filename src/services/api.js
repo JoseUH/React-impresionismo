@@ -12,6 +12,6 @@ export const APIHeaders = {
 };
 
 export const API = axios.create({
-  baseURL: "http://localhost:8001",
+  baseURL: "https://node-backimpresionismo.vercel.app/",
   headers: APIHeaders,
 });
